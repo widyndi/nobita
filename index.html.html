@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>CSS Website Layout</title>
+
+<style>
+    *{
+     box-sizing: border-box;
+     }
+ body {
+ 	  font-family: Arial;
+ 	  padding: 10px;
+ 	  background: # Thistle;
+ 	  margin: 0;
+ }
+/* Header/Blog Title */
+.header {
+	background-image: url(doraemon1.jpg);
+	padding: 55px;
+	text-align: center;
+	color:white;
+}
+.header h1 {
+	font-size: 50px;
+}
+/* style the top navigation bar*/
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+/* atyle the topnav link */
+.topnav a {
+	float: Left;
+	display: block;
+	color: lightgrey;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/* change color on hover */
+.topnav a:hover {
+	background-color: white;
+	color: black;
+}
+/* create two unequal columns that floats to each other */
+/* Left column */
+.leftcolumn {
+	float: Left;
+	width: 75%;
+}
+/*Right column */
+.rightcolumn {
+	float: Left;
+	width: 25%;
+    background-color: white;
+    padding-left: 20px;
+}
+/* fake image */
+.fakeimg {
+	background-color: white;
+	width: 100px;
+	padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+	background-color: lightgrey;
+	padding: 20px;
+	margin-top: 20px;
+}
+/* clear floats after the columns */
+.row: after {
+   content: "";
+   display: table;
+   clear: both;
+}
+/* footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: white;
+	margin-top: 20px;
+}
+/*Responsive layout - when the screen is less than800px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+ 	.leftcolumn, .rightcolumn {
+ 		width: 100%;
+ 		padding: 0;
+ 	}
+ }
+ /* Responsive layout - when the screen is less than 400px wide, make the navigation lik stack on to of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+    .topnav a {
+    	float: none;
+    	width: 100p%;
+    }
+}
+</style>
+</head>
+<body>
+
+	<div class="header">
+		<h1>My Website</h1>
+		<p>tells of someone who can only be admired but not owned</p>
+	</div>
+
+    <div class="topnav">
+    	<a href="#">Link</a>
+    	<a href="#">Link</a>
+    	<a href="#">Link</a>
+    	<a href="#" style="float:right">Link</a>
+    </div>
+              <div class="row">
+              	<div class="leftcolumn">
+              		<div class="card">
+                   
+    			<img src="doraemon.jpg"height="500px"width="100%">
+          <p></p>
+    			<p>Doraemon berkisah tentang kehidupan seorang anak pemalas kelas 5 SD yang bernama nobi nobita yang didatangi sebuah robot kucing bernama doraemon yang datang dari abad ke-22.Dia dikirim untuk menolong nobita agar keturunan nobita dapat menikmati kesuksesannya dari pada harus menderita dari finansial yang akan terjadi dimasa depan yang disebabkan kebodohan nobita.Nobita,setelah diganggu dalam ulangan sekolahnya atau setelah diganggu oleh giant dan suneo,akan selalu mendatangi doraemon untuk meminta bantuannya.Doraemon kemudia biasannya akan membantu nobita dengan menggunakan peralatan-peralatan canggih dari kantong ajaibnya.Kehidupan awal doraemon tidak begitu baik,ia adalah sebuah robot gagal yang telah dilelang kepada sebuah keluarga miskin yang terlilit utang,yang tak lain adalah keluarga keturunan nobi nobita.Misi doraemon adalah untuk menolong nobi nobita.Doraemon tiba ditahun 1969,pada hari tahun baru jepang.ia keluar dari laci meja milik nobita,dan sejak saat itu ia tinggal bersama nobita ,misinya adalah untuk mencegah nobita menjadi orang gagal.Setiap kali nobita tertimpa masalah,doraemon akan segera membantu dengan alat-alat ajaibnya.Misi doraemon berhasi,karena ketika mereka menjelajah ke masa depan,nobita melihat dirinya menikah dengan shizuka,bukan dengan jaiko.Dia juga melihat keturunanya hidup dalam kondisi yang baik dari pada ketika sewashi mengiring doraemon dulu...</p>
+    		</div>
+    
+    		<div class="card">
+    			
+    			<img src="nobita1.jpg"height="600px"width="100%">
+    			<p></p>
+    			<p>Takeshi Gouda (剛田 武, Gōda Takeshi), sering dipanggil Giant atau Takeshi (lahir pada 15 Juni) adalah seorang anak pengganggu lokal yang kuat dan cepat marah. Ia sering merampas barang-barang milik anak-anak lain (terutama milik Nobita Nobi dan Suneo Honekawa) dengan dalih "meminjam" mereka, kecuali mainan tersebut rusak. Giant memilki badan besar, mudah marah dan suka melakukan kekerasan atau suka memaksa apabila permintaannya tak dituruti, atau ada yang mengejeknya. Giant memiliki hobi memasak dan menyanyi yang hasilnya tak memuaskan, mengganggu, dan menindas teman-temannya. Ia juga suka melakukan konser, atau meminta teman-temannya mencicipi masakannya yang membuat teman-temannya ketakutan mendengarnya.
+          </p></p>
+    		</div>
+
+        <div class="card">
+         
+          <img src="dora4.jpg.jpg"height=500px"width="100%">
+          <p>STAND BY ME DORAEMON 2" pemandangan kehidupan masa depan nobita dan kawan-kawan,dimana mereka sudah menjadi pria dan wanita dewasa.</p>
+
+
+
+        </div>
+
+        <div class="card">
+         
+         <img src="nobita.jpg"height="500px"width="100%">
+          <p></p>
+          <p>Suneo memilki keahlian bermain sulap, bermain radio control dan memutar piring. Ia juga memiliki sifat manja, mudah menyerah, cengeng, dan penakut. Ia juga suka berbohong untuk menjaga harga dirinya yang membuat dirinya ketagihan dalam berbohong kepada semua orang, dan ia juga seorang narsis atau menganggap bahwa ia merasa percaya diri bahwa ia mempunyai wajah yang tampan walaupun kenyataannya memang tidak terlihat tampan. Ia memilki hobi memandangi cermin, mengoleksi barang antik, mengoleksi permainan konsol, mengoleksi permainan video, mengoleksi mainan remote kontrol dan mengumpulkan prangko atau uang kuno</p>
+        </div>
+
+        <div class="card">
+         
+          <img src="suneo1.jpg"height="500px"width="100%">
+          <p></p>
+          <p>Shizuka Minamoto adalah teman sekelas nobita dan teman temannya sejak kecil.ia punya sifat yang rajin,baik,manis dan aktif.ia akan menjadi istri nobita saat ia sudah dewasa dimasa depan.Shizuka memiliki hubungan dekat dengan anak lain yang tampan dan juga pintar yaitu dekisugi.Mereka sering bermain atau mengerjakan tugas sekolah bersama.Hal inilah yang membuat nobita iri dan cemburu melihatnya.ia bercita-cita menjadi pramugari dan juga sering mengikuti kursus piano,bermain biola,mengundang teman-temannya untuk melakukan kegiatan bersamannya(terutama diacara hari ulang tahunnya).kegemarannya adalah mandi dan juga berendam di osen(tempat pemandian air panas khas jepang).makanan favoritnya adalah ubi bakar,tetapi ia sangat malu saat makan ubi bakar didepan teman-temannya.penampilan shizuka telah berubah sedikit selama bertahun-tahun dari seri doraemon,dia ramping ,memiliki warna kulit cerah,mata hitam dan rambutnya bewarna gelap dan diikat dengan kuncir pendek.dia biasanya mengenakan gaunmerah muda.shizuka adalah gadis yang cerdas dan baik.dia tidak seperti nobita,dia cerdas dan rajin belajar.dia peduli pada orang yang lebih lemah.shizuka sangat mencintai bonekanya,sampai-sampai dia lebih mencintai beneka itu daripada teman-temannya sendiri.shizuka memiliki kepribadian ganda,yang sebagian besar ditampilkan dalam anime 1973 dan efisode paling awal dari anime 1979,adegan yang menunjukan dia tidur dan makan pada saat yang sama,mencuri lipstik ibunya untuk dia mainkan,menelan batu cincin,dan menyelipkan kulit pisang.shizuka mencintai nobita lebih dari teman-temanya.namun dia marah ketika dia berperilaku kasar atau melihatnnya mandi secara sengaja atau tidak sengaja.</p>
+</div>
+</div>
+
+    	<div class="rightcolumn">
+    		<div class="card">
+    			
+    			<img src="dora2.jpg.jpg"height="200px"width="100%">
+    			<p>Shizuka Minamoto adalah teman sekelas nobita dan teman temannya sejak kecil.ia punya sifat yang rajin,baik,manis dan aktif.ia akan menjadi istri nobita saat ia sudah dewasa dimasa depan.Shizuka memiliki hubungan dekat dengan anak lain yang tampan dan juga pintar yaitu dekisugi.Mereka sering bermain atau mengerjakan tugas sekolah bersama.Hal inilah yang membuat nobita iri dan cemburu melihatnya.ia bercita-cita menjadi pramugari dan juga sering mengikuti kursus piano,bermain biola,mengundang teman-temannya untuk melakukan kegiatan bersamannya(terutama diacara hari ulang tahunnya).kegemarannya adalah mandi dan juga berendam di osen(tempat pemandian air panas khas jepang).makanan favoritnya adalah ubi bakar,tetapi ia sangat malu saat makan ubi bakar didepan teman-temannya.penampilan shizuka telah berubah sedikit selama bertahun-tahun dari seri doraemon,dia ramping ,memiliki warna kulit cerah,mata hitam dan rambutnya bewarna gelap dan diikat dengan kuncir pendek.dia biasanya mengenakan gaunmerah muda.shizuka adalah gadis yang cerdas dan baik.dia tidak seperti nobita,dia cerdas dan rajin belajar.dia peduli pada orang yang lebih lemah.shizuka sangat mencintai bonekanya,sampai-sampai dia lebih mencintai beneka itu daripada teman-temannya sendiri.shizuka memiliki kepribadian ganda,yang sebagian besar ditampilkan dalam anime 1973 dan efisode paling awal dari anime 1979,adegan yang menunjukan dia tidur dan makan pada saat yang sama,mencuri lipstik ibunya untuk dia mainkan,menelan batu cincin,dan menyelipkan kulit pisang.shizuka mencintai nobita lebih dari teman-temanya.namun dia marah ketika dia berperilaku kasar atau melihatnnya mandi secara sengaja atau tidak sengaja..</p>
+    		</div>
+
+    	
+        
+        
+    			
+
+  
+  </body>
+  </html>
+</style>
+</head>
+<body>
+
+  <div class="topnav">
+  	<a href="#">Link</a>
+  	<a href="#">Link</a>
+  	<a href="#">Link</a>
+</body>
+</html>
+
